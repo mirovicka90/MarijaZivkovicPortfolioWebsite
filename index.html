@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="css\master.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Marija Zivkovic | Web Developer</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>MARIJA ZIVKOVIC</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <img src="images\profileImage.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        Hi, I'm Marija Zivkovic, a passionate and skilled web developer based in Belgrade, Serbia. With a strong
+        foundation in both front-end and back-end technologies, I specialize in creating dynamic and
+        user-friendly websites that deliver exceptional user experiences.
+
+
+
+        I have a keen eye for detail and a problem-solving mindset, allowing me to tackle complex coding
+        challenges with creativity and efficiency. My expertise includes HTML, CSS, JavaScript, PHP, and various
+        frameworks such as Bootstrap and jQuery.
+
+
+
+
+        I am committed to delivering high-quality solutions that not only meet but exceed the expectations of my
+        clients. Whether you're looking to build a brand-new website or enhance an existing one, I am here to
+        turn your vision into reality.
+
+
+
+        Let's collaborate and create something amazing together!
+
+
+      </p>
+    </div>
+  </section>
+  <!-- More about -->
+  <section class="more-about">
+    <h2>More About Me</h2>
+    <p>
+      Hello! I am a passionate web developer dedicated to creating innovative and user-friendly websites. With a
+      strong background in coding languages such as HTML, CSS, and JavaScript, I strive to bring my clients'
+      visions to life through clean and efficient design. I am constantly learning and adapting to new
+      technologies to stay ahead in this ever-evolving field. Let's work together to make your online presence
+      stand out!
+    </p>
+  </section>
+  <!-- Skills section -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="images\html5Icon.webp" alt="" loading="lazy" class="icon icon-card" />
+        <img src="images\cssIcon..png" alt="" loading="lazy" class="icon icon-card" />
+        <img src="images\jsIcon.png" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img src="images\reactIcon.webp" alt="" loading="lazy" class="icon icon-card" />
+
+      </div>
+    </div>
+  </section>
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">My Recent Project</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="images\memoryGameImage.png"
+          alt="memory-game" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Memory Game</h3>
+        <p class="project-details">
+          Implemented the application using JQuery, JavaScript, HTML, and CSS. The application consists of a
+          configuration page where users can enter the names of two players, a dropdown list for selecting a
+          duration of the time available for each player moves, and a radio button to select the level of
+          complexity. The first level has 6 pairs of images, the second one 12, and the third one 16. The main
+          application goal is to find 2 same images. The player who finds a higher number of the image pairs,
+          for the configured time, is the winner. Also, the player's scores and the number of attempts are
+          counted and displayed. In the end, the winner is announced.
+        </p>
+        <a href="https://github.com/mirovicka90/memgame" target="_blank" class="project-link">Check it Out</a>
+      </div>
+
+
+    </div>
+    </div>
+  </section>
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <h2>Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xyylngw" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+              required />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+              class="input-field" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Social accounts - Fixed to the right -->
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/marija-zivkovic-937a52b1/" target="_blank"><img src="images\linkedinIcon.png"
+        alt="Linkedin" loading="lazy" class="socicon" /></a>
+    <a href="https://github.com/mirovicka90/" target="_blank"><img src="images\gitHubIcon.png" alt="Github"
+        loading="lazy" class="socicon" /></a>
+    <a href="https://www.instagram.com/mirovicka90/" target="_blank"><img src="images\instagramIcon.jpeg"
+        alt="Instagram" loading="lazy" class="socicon" /></a>
+    <a href="https://www.facebook.com/marija.mirovic.9" target="_blank"><img src="images\facebookIcon.png" alt="Github"
+        class="socicon" /></a>
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"><img src="C:\Users\mmirovic\Downloads\scrollUpIcon.png" class="socicon up-arrow"
+        alt="scroll-up" /></i>
+    <!-- Footer section -->
+    <footer class="footer">
+      <p class="copy">&copy; Copyright 2024</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://www.linkedin.com/in/marija-zivkovic-937a52b1/" target="_blank">Marija Zivkovic </a>
+        <!-- <i class="scroll-up" id="scroll-up"><img src="C:\Users\mmirovic\Downloads\scrollUpIcon.png" class="socicon up-arrow"
+          alt="scroll-up" /></i> -->
+      </p>
+    </footer>
+    <!-- Website scripts -->
+    <script src="js\main.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
